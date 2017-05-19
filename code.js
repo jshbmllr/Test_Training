@@ -10,10 +10,10 @@ function reverseArray(array) {
   return array.reverse();
 }
 
-function asyncFunction() {
+function asyncFunction(number) {
   setTimeout(() => {
     return "async";
-  });
+  }, number);
 }
 
 function aReturnlessFunction() {
