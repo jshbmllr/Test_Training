@@ -2,13 +2,14 @@ function timesTwo(number) {
   return number * 2;
 }
 
-function divedByTen(number) {
+function dividedByTen(number) {
   return number/10;
 }
 
-function reverseString(string) {
-  return string.reverse();
+function reverseArray(array) {
+  return array.reverse();
 }
 
-module.exports = timesTwo;
-module.exports = divedByTen;
+module.exports.timesTwo = timesTwo;
+module.exports.dividedByTen = dividedByTen;
+module.exports.reverseArray = reverseArray;
