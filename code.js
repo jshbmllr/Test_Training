@@ -10,6 +10,23 @@ function reverseArray(array) {
   return array.reverse();
 }
 
+function asyncFunction() {
+  setTimeout(() => {
+    return "async";
+  });
+}
+
+function aReturnlessFunction() {
+  console.log("I RETURN NOTHING!");
+}
+
+function aRandomNumber() {
+  return Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+}
+
 module.exports.timesTwo = timesTwo;
 module.exports.dividedByTen = dividedByTen;
 module.exports.reverseArray = reverseArray;
+module.exports.asyncFunction = asyncFunction;
+module.exports.aReturnlessFunction = aReturnlessFunction;
+module.exports.aRandomNumber = aRandomNumber;
